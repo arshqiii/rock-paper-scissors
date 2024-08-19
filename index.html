@@ -11,17 +11,22 @@
     <div class="header"> 
         <h1>Rock Paper Scissors</h1>
     </div>
-    <div class="turns">
-        <p>User has <span id="numOfTurns">5</span> turns</p>
+    <div id="numOfTurns">
+        <p>User has 5 turns</p>
     </div>
     <div class="options"> 
-        <button>🪨</button>
-        <button>📃</button>
-        <button>✂️</button>
+        <button onclick="playRound('rock')">🪨</button>
+        <button onclick="playRound('paper')">📃</button>
+        <button onclick="playRound('scissor')">✂️</button>
     </div>
     
     <div id="result">
         <h1></h1>
+    </div>
+
+    <div class="choice">
+        <div id="userChoice">User chooses: </div>
+        <div id="ComputerChoice">Computer chooses: </div>
     </div>
 
     <div class="score-container">
